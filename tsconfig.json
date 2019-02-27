@@ -18,19 +18,8 @@
     "strict": false,
     "suppressExcessPropertyErrors": true,
     "lib": ["es2018", "dom"],
-    "baseUrl": ".",
-    "paths": {
-      "tslib": [
-        "node_modules/tslib/tslib.d.ts"
-      ]
-    }
+    "baseUrl": "."
   },
-  "include": [
-    "src/**/*",
-    "test/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "es"
-  ]
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["node_modules", "es"]
 }
