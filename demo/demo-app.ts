@@ -12,6 +12,7 @@
 // }
 // const spanFactory = (content) => () =>{
 //     let span = document.createElement('span');
+
 //     span.textContent = content;
 //     return <any>span
 // }
