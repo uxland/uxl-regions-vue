@@ -94,7 +94,7 @@ export class Region implements IRegion {
         let element = await viewFactory(vw, this, typeof view === "string" ? view : this.getKey(vw));
         this.components.set(vw, element);
       }
-      let element: any = this.components.get(vw);
+      let element: Element | any = this.components.get(vw);
       this.activeViews.push(vw);
       if (element) {
         if (element.hasOwnProperty("__vue__")) element.__vue__.active = true;
@@ -110,7 +110,7 @@ export class Region implements IRegion {
     let v: ViewDefinition = typeof view === "string" ? this.getView(view) : (view as ViewDefinition);
     let index = this.activeViews.indexOf(v);
     if (index !== -1) this.activeViews.splice(index, 1);
-    let component: any = this.components.get(v);
+    let component: Element | any = this.components.get(v);
     if (component) {
       if (component.hasOwnProperty("__vue__")) component.__vue__.active = false;
       this.adapter.deactivateView(component);
