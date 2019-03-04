@@ -2,7 +2,7 @@ import Vue from "vue";
 import { Region, RegionDefinition, IRegion } from "./region";
 import { IRegionManager } from "./region-manager";
 import { RegionAdapterRegistry } from "./region-adapter-registry";
-import { invariant } from "./utilities/invariant";
+import { invariant } from "@uxland/uxl-utilities/invariant";
 
 export const regionFactory = (
   definition: RegionDefinition,

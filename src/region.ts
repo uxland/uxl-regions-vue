@@ -1,6 +1,6 @@
 import { ViewComponent, ViewDefinition } from "./view-definition";
 import { validateView } from "./validate-view";
-import { invariant } from "./utilities/invariant";
+import { invariant } from "@uxland/uxl-utilities/invariant";
 import { viewFactory } from "./view-factory";
 import { IRegionManager } from "./region-manager";
 

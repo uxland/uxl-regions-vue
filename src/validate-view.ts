@@ -1,5 +1,5 @@
 import { ViewDefinition } from "./view-definition";
-import { invariant } from "./utilities/invariant";
+import { invariant } from "@uxland/uxl-utilities/invariant";
 const isDomElement = (element: HTMLElement) =>
   typeof HTMLElement === "object"
     ? element instanceof HTMLElement
