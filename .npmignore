@@ -3,6 +3,8 @@ test/
 mochawesome-report/
 polymer.json
 tsconfig.json
+tsconfig-es.json
+tsconfig-cjs.json
 node_modules/
 .idea/
 demo/
