@@ -11,3 +11,4 @@ webpack.config.js
 .travis.yml
 README.md
 src/
+vue.config.js
